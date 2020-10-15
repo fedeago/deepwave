@@ -1,15 +1,19 @@
 Package: deepwave
-Title: What the Package Does (One Line, Title Case)
+Title: Implements functions needed by NewWave for each single worker
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
+Authors@R:c(person("Federico","Agostinis",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "federico.agostinis@outlook.com"),
+           person("Chiara", "Romualdi", role = "aut"),
+             person("Gabriele", "Sales", role = "aut"),
+             person("Davide", "Risso", role = "aut"))
+Description: Contains all functions needed for initialization, 
+      optimization in both delayed or matrix framework
+Depends: 
+    R (>= 4.0),
+    DelayedArray,
+    BiocParallel
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
